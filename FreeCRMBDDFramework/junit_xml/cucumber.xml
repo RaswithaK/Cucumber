@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.207888">
+<testcase classname="create contact in homwpage" name="Create a new contact in FreeCRM" time="20.454805">
+<system-out><![CDATA[Given user is alreayd on loginpage..........................................passed
+When Title of login page is FREECRM.........................................passed
+Then User enters "RaswithaK" in usernamefield And User enters "welcome46@" in passowrd field.passed
+Then User clicks on Login Button............................................passed
+Then verify user navigated to Homepage or not...............................passed
+Then user moves to new contact page.........................................passed
+Then user placing contact "raswitha" and "K" and "doctor"...................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="create contact in homwpage" name="Create a new contact in FreeCRM 2" time="9.753083">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and service]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at StepDefinitions.stepDefinitoncontact.verify_user_navigated_to_Homepage_or_not(stepDefinitoncontact.java:60)&#13;&#10;&#9;at ✽.Then verify user navigated to Homepage or not(C:/selenium_1/eclipse workplace/FreeCRMBDDFramework/src/main/java/Features/contact.feature:8)&#13;&#10;"><![CDATA[Given user is alreayd on loginpage..........................................passed
+When Title of login page is FREECRM.........................................passed
+Then User enters "Tom" in usernamefield And User enters "122345" in passowrd field.passed
+Then User clicks on Login Button............................................passed
+Then verify user navigated to Homepage or not...............................failed
+Then user moves to new contact page.........................................skipped
+Then user placing contact "tom" and "david" and "doc".......................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[CRMPRO]> but was:<[#1 Free CRM software in the cloud for sales and service]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDefinitions.stepDefinitoncontact.verify_user_navigated_to_Homepage_or_not(stepDefinitoncontact.java:60)
+	at ✽.Then verify user navigated to Homepage or not(C:/selenium_1/eclipse workplace/FreeCRMBDDFramework/src/main/java/Features/contact.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
